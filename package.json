@@ -1,0 +1,22 @@
+{
+  "name": "erc3643-tokenized-realestate",
+  "version": "1.0.0",
+  "description": "ERC-3643 (T-REX) compliant tokenized real estate project built from scratch",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "verify": "npx hardhat verify --network sepolia"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^17.3.1"
+  }
+}
