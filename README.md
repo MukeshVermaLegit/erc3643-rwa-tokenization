@@ -430,6 +430,4 @@ test/
 - **Sepolia** --- Testnet deployment
 - **Etherscan** --- Contract verification
 
-## License
 
-MIT
