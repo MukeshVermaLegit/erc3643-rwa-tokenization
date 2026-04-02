@@ -40,8 +40,8 @@ A compliant security token project implementing the **ERC-3643 standard (T-REX p
 
 | Action | Transaction Hash | Etherscan |
 |---|---|---|
-| Mint 1000 RET → Investor 1 (USA) | `0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655` | [View](https://sepolia.etherscan.io/tx/0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655) |
-| Forced Transfer 500 RET → Investor 2 (UK) | `0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708` | [View](https://sepolia.etherscan.io/tx/0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708) |
+| Mint 1000 RET → Investor 1 (USA) | `0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708` | [View](https://sepolia.etherscan.io/tx/0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708) |
+| Forced Transfer 500 RET → Investor 2 (UK) | `0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655` | [View](https://sepolia.etherscan.io/tx/0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655) |
 
 The Compliance Monitor confirmed the post-interaction state:
 - **Total Supply:** 1000 RET
