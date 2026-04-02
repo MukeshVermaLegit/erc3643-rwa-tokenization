@@ -132,7 +132,9 @@ async function main() {
   // Restrict country 999
   await countryRestrict.addCountryRestriction(complianceAddress, 999);
   console.log("Country 999 restricted");
+}
 
+ /*
   // ============================================================
   // 11. Create identities for 2 test investors and register them
   // ============================================================
@@ -210,3 +212,5 @@ main()
     console.error(error);
     process.exit(1);
   });
+
+ */

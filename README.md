@@ -26,6 +26,32 @@ A compliant security token project implementing the **ERC-3643 standard (T-REX p
 
 ---
 
+## Demo
+
+### Frontend — Admin Dashboard & Compliance Monitor
+
+| Admin Dashboard | Compliance Monitor |
+|---|---|
+| ![Admin Dashboard](screenshots/admin-dashboard.png) | ![Compliance Monitor](screenshots/compliance-monitor.png) |
+
+![Frontend](screenshots/screenshot-3.png)
+
+###  Transactions on Sepolia
+
+| Action | Transaction Hash | Etherscan |
+|---|---|---|
+| Mint 1000 RET → Investor 1 (USA) | `0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655` | [View](https://sepolia.etherscan.io/tx/0x834fc6131e40db2cb9c2818eb44d0fbb0df230668305d3f0eca2aeeccc709655) |
+| Forced Transfer 500 RET → Investor 2 (UK) | `0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708` | [View](https://sepolia.etherscan.io/tx/0x326c0225164f956e8ebdf23c3b26a8433d2ddf3a5f4aa2d40ac04992818f5708) |
+
+The Compliance Monitor confirmed the post-interaction state:
+- **Total Supply:** 1000 RET
+- **Holders:** 2 / 100
+- **Max Balance per Investor:** 10,000 RET
+- **Restricted Countries:** 999
+- **Status:** ACTIVE
+
+---
+
 ## What is ERC-3643?
 
 **ERC-3643** (also known as the T-REX protocol --- Token for Regulated EXchanges) is an Ethereum standard for compliant security tokens. Unlike utility tokens (ERC-20), security tokens represent ownership of real-world assets and must comply with securities regulations.
@@ -416,6 +442,14 @@ test/
 ├── token.test.js        # Token minting, transfer, freeze, recovery, pause tests
 ├── compliance.test.js   # Compliance module tests
 └── identity.test.js     # Identity registry & trusted issuer tests
+frontend/
+├── src/
+│   ├── pages/           # AdminDashboard, InvestorPortal, ComplianceMonitor
+│   ├── components/      # Navbar, ConnectWallet, TransactionStatus
+│   ├── hooks/           # useContracts (ethers.js contract instances)
+│   ├── contracts/       # ABI JSON files for all deployed contracts
+│   └── config.js        # Contract addresses & network config
+└── vite.config.js
 ```
 
 ---
@@ -427,6 +461,8 @@ test/
 - **OpenZeppelin** --- ERC-20 and Ownable base contracts
 - **Ethers.js** --- Contract interaction
 - **Chai** --- Testing assertions
+- **React** --- Frontend UI
+- **Vite** --- Frontend build tool
 - **Sepolia** --- Testnet deployment
 - **Etherscan** --- Contract verification
 
